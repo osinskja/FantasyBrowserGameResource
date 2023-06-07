@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "resourceName": { "type": "string" },
+    "amount": { "type": "integer" },
+    "playerName": { "type": "string" }
+  },
+  "required": ["resourceName", "amount", "playerName"]
+}

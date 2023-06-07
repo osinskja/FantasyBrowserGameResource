@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+    <changeSet id="V2023_03_12_12_38_00_initial_resource_data" author="adao">
+        <insert tableName="resource">
+            <column name="id" value="780baf3a-c64a-4be1-80ef-3b3aa51f488c"/>
+            <column name="name" value="wood"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="0056c662-f759-42e2-9156-1c2dc3f8522a"/>
+            <column name="name" value="gem"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="110325a1-d753-4bb8-8c01-8146703035ae"/>
+            <column name="name" value="stone"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

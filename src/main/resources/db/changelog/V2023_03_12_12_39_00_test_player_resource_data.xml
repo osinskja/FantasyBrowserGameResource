@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+    <changeSet id="V2023_03_12_12_39_00_test_player_resource_data" author="adao">
+
+        <insert tableName="player">
+            <column name="id" value="ec7736b9-8796-40d3-9d69-8875dcd29584"/>
+            <column name="name" value="Adao"/>
+            <column name="password" value="pass"/>
+        </insert>
+        <insert tableName="player_resource">
+            <column name="id" value="04e42249-7344-4183-89e2-c28382c8b6e4"/>
+            <column name="player_id" value="ec7736b9-8796-40d3-9d69-8875dcd29584"/>
+            <column name="resource_id" value="780baf3a-c64a-4be1-80ef-3b3aa51f488c"/>
+            <column name="amount" valueNumeric="10"/>
+        </insert>
+        <insert tableName="player_resource">
+            <column name="id" value="341e5c29-e251-4aac-9270-bb3e5ec7d361"/>
+            <column name="player_id" value="ec7736b9-8796-40d3-9d69-8875dcd29584"/>
+            <column name="resource_id" value="110325a1-d753-4bb8-8c01-8146703035ae"/>
+            <column name="amount" valueNumeric="20"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,33 @@
+Player's resource
+id, resource_id, player_id, amount
+
+Player's Source of resource
+id, source_of_resource_id, player_id, current_level
+
+Source_of_resource
+id, resource_id, production_increase_per_level
+
+Source_of_resource_cost
+id, resource_id, source_of_resource_id, amount, cost_increase_per_level  
+
+Resource
+id, name
+
+Player
+id, name, password
+
+Player's army
+id, unit_id, count,  player_id
+
+Unit
+id, cost, attack_power, defense 
+
+Unit_cost
+id, resource_id, unit_id, amount  
+
+
+Walka:
+Trzeba ułożyć w kolejności od pierwszego do ostatniego wroga swoje jednostki. Po kazdym ulozeniu przeliczana jest przewidywana liczebnosc po walce miedzy jednostkami (w najlepszym i najgorszym wypadku). Mozna ustawic ta sama we wszystkich miejscach.
+Jednostki:
+Mozna tworzyc wlasna kombinacje parametrow: szybkosc, obrazenia, punkty zycia. Od rozlozenia parametrow zalezy wyglad jednostki.
+
